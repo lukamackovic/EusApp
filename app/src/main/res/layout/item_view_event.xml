@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/event_image"
+                android:layout_width="@dimen/event_item_image_height_width"
+                android:layout_height="@dimen/event_item_image_height_width"
+                android:layout_marginEnd="@dimen/margin_4"
+                android:contentDescription="@string/event_image_label"
+                android:src="@drawable/ic_events"
+                android:padding="@dimen/padding_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/event_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="@string/event_title_label"
+                android:textSize="@dimen/text_size_24"
+                app:layout_constraintStart_toEndOf="@id/event_image"
+                app:layout_constraintTop_toTopOf="@id/event_image"
+                android:maxLength="30"
+                android:ellipsize="marquee"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/event_remaining_seats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_title"
+                android:layout_marginStart="@dimen/margin_8"
+                android:text="@string/remaining_seats_left_label"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintStart_toEndOf="@id/event_image"
+                app:layout_constraintTop_toTopOf="@id/event_registration_end_date" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/event_registration_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:text="@string/registration_end_date_label"
+                android:textSize="@dimen/text_size_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

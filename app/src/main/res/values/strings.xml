@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">EusApp</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="events_fragment">Events Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="news_fragment">News Fragment</string>
+    <string name="eus_logo">eus_logo</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="delete_data">Delete data</string>
+
+    <string name="error_task_google_sign_in">"Error while signing on Google Account"</string>
+    <string name="report_not_sign_in">"You're not signed in. Click to sign in with Google account"</string>
+
+    <string name="event_image_label">Event image</string>
+    <string name="event_title_label">Event Title</string>
+    <string name="remaining_seats_left_label">Remaining \'seats\' left</string>
+    <string name="registration_end_date_label">Registration end date</string>
+
+    <string name="remaining_seats_left" formatted="false">%d seats left</string>
+    <string name="registration_end_date" formatted="false">Registration end in: \n%1$td/%1$tm/%1$tY - %1$tH:%1$tM</string>
+    <string name="start_date" formatted="false">Event start date: \n%1$td/%1$tm/%1$tY - %1$tH:%1$tM</string>
+    <string name="event_registration_end" formatted="false">%1$td/%1$tm/%1$tY - %1$tH:%1$tM</string>
+    <string name="event_start" formatted="false">%1$td/%1$tm/%1$tY - %1$tH:%1$tM</string>
+    <string name="news_created" formatted="false">News created: %1$td/%1$tm/%1$tY - %1$tH:%1$tM</string>
+
+    <string name="events">Events</string>
+    <string name="news">News</string>
+    <string name="profile">Profile</string>
+    <string name="user_image">User image</string>
+    <string name="event_title">Event title</string>
+    <string name="click_to_select_photo">Click to select photo</string>
+    <string name="attendee_limit_to_this_event">Attendee limit to this Event:</string>
+    <string name="start_date_of_event">Start date of Event</string>
+    <string name="dd_mm_yyyy_hh_mm">dd/mm/yyyy - HH:MM</string>
+    <string name="three_dots">…</string>
+    <string name="registration_end_date_of_event">Registration end date of Event</string>
+    <string name="save">Save</string>
+    <string name="error_message_get_events">"Error while retrieving events"</string>
+    <string name="event_description">Event description</string>
+    <string name="you_didn_t_sign_up_for_any_event">You didn\'t sign up for any Event</string>
+
+    <string name="event_title_error_message">You must enter a title, and no more than 30 characters.</string>
+    <string name="event_image_error_message">You must pick a photo for Event.</string>
+    <string name="event_registration_limit_error_message">Attendee limit can only be positive number.</string>
+    <string name="event_start_date_error_message">Start date of an Event can not be before registration ends. You must pick a date.</string>
+    <string name="event_registration_end_date_error_message">Event registration end date can not be before current date. You must pick a date.</string>
+    <string name="event_not_exist_error_msg">Event does not exist</string>
+
+    <string name="news_title_error_message">You must enter a title, and no more than 30 character</string>
+    <string name="news_content_error_message">You must enter content of news</string>
+
+    <string name="builder_title">Permission Required</string>
+    <string name="builder_message">Permission to access your device storage is required to pick image for Event. Please go to settings to enable permission to access storage</string>
+    <string name="builder_positive_button">OK</string>
+    <string name="builder_negative_button">Cancel</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="registration_has_ended_for_this_event">Registration has ended for this event</string>
+
+    <string name="ascending">ASCENDING</string>
+    <string name="error_event_not_found">Error while trying to initialize </string>
+    <string name="error_delete_user">Error while trying to delete user. There is no current user</string>
+    <string name="no_events_error_message">There are no events at the moment</string>
+    <string name="create_event_message">Create new Event</string>
+    <string name="create_news_message">Create new News</string>
+    <string name="edit_event_message">Edit event</string>
+    <string name="edit_news_message">Edit news</string>
+    <string name="news_title">News title</string>
+    <string name="news_content">\t\tNews Content</string>
+    <string name="error_retrieving_news">Error while retrieving news</string>
+    <string name="no_news_error_message">There are no news at the moment</string>
+    <string name="news_content_body">News content body</string>
+    <string name="sort_by">sort by:</string>
+    <string name="created_date">date created</string>
+    <string name="delete">delete</string>
+    <string name="edit">edit</string>
+    <string name="cancel" tools:ignore="ButtonCase">cancel</string>
+
+    <string name="event_toolbar_title" formatted="false">Event: %s</string>
+    <string name="news_toolbar_title" formatted="false">News: %s</string>
+
+    <string-array name="events_sort_by_list">
+        <item>date created</item>
+        <item>date start</item>
+        <item>registration end</item>
+        <item>title</item>
+    </string-array>
+
+    <string-array name="news_sort_by_list">
+        <item>date created</item>
+        <item>title</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="height_0">0dp</dimen>
+
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+
+    <dimen name="button_height">36dp</dimen>
+
+    <dimen name="choose_date_button">40dp</dimen>
+
+    <dimen name="app_bar_logo_width">180dp</dimen>
+    <dimen name="app_bar_logo_height">30dp</dimen>
+
+    <dimen name="details_event_image_height">200dp</dimen>
+    <dimen name="create_event_image_height_width">120dp</dimen>
+    <dimen name="profile_image_height_width">130dp</dimen>
+    <dimen name="event_item_image_height_width">90dp</dimen>
+    <dimen name="floating_action_button_max_size">44dp</dimen>
+
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+
+    <dimen name="padding_32">32dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+
+    <dimen name="registration_limit_width">50dp</dimen>
+
+    <dimen name="weight_1">1</dimen>
+    <dimen name="weight_0_4">0.4</dimen>
+    <dimen name="weight_0_6">0.6</dimen>
+
+</resources>

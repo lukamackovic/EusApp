@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_event_content_view">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/event_title_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_8"
+            android:ems="10"
+            android:hint="@string/event_title"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textCursorDrawable="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bar_layout" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/event_description_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_24"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/event_description"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textCursorDrawable="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/event_title_edit_text" />
+
+        <ImageView
+            android:id="@+id/add_photo_image_view"
+            android:layout_width="@dimen/create_event_image_height_width"
+            android:layout_height="@dimen/create_event_image_height_width"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_8"
+            android:contentDescription="@string/user_image"
+            android:src="@drawable/ic_add_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_description_edit_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/add_photo_text_view"
+            style="@android:style/Widget.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="@string/click_to_select_photo"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_14"
+            app:layout_constraintStart_toStartOf="@+id/add_photo_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/add_photo_image_view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/attendee_limit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_32"
+            android:text="@string/attendee_limit_to_this_event"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_photo_text_view" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/event_attendee_limit_edit_text"
+            android:layout_width="@dimen/registration_limit_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_8"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textCursorDrawable="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/attendee_limit_text_view"
+            app:layout_constraintStart_toEndOf="@+id/attendee_limit_text_view"
+            app:layout_constraintTop_toTopOf="@+id/attendee_limit_text_view"
+            tools:ignore="LabelFor" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/start_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_32"
+            android:text="@string/start_date_of_event"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_attendee_limit_edit_text" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/event_start_date_text_view"
+            style="@android:style/Widget.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@color/colorPrimary"
+            android:text="@string/dd_mm_yyyy_hh_mm"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/start_date_label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pick_event_start_time"
+            android:layout_width="@dimen/choose_date_button"
+            android:layout_height="@dimen/choose_date_button"
+            android:layout_marginStart="@dimen/margin_16"
+            android:backgroundTint="@color/colorWhite"
+            android:text="@string/three_dots"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/event_start_date_text_view"
+            app:layout_constraintStart_toEndOf="@+id/event_start_date_text_view"
+            app:layout_constraintTop_toTopOf="@+id/event_start_date_text_view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/registration_end_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/registration_end_date_of_event"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_start_date_text_view" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/event_registration_end_date_text_view"
+            style="@android:style/Widget.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_8"
+            android:background="@color/colorPrimary"
+            android:text="@string/dd_mm_yyyy_hh_mm"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registration_end_date_label" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pick_event_registration_end_date"
+            android:layout_width="@dimen/choose_date_button"
+            android:layout_height="@dimen/choose_date_button"
+            android:layout_marginStart="@dimen/margin_16"
+            android:backgroundTint="@color/colorWhite"
+            android:text="@string/three_dots"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/event_registration_end_date_text_view"
+            app:layout_constraintStart_toEndOf="@+id/event_registration_end_date_text_view"
+            app:layout_constraintTop_toTopOf="@+id/event_registration_end_date_text_view" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_48"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:backgroundTint="@color/colorWhite"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="@string/save"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pick_event_registration_end_date"
+            android:layout_marginBottom="@dimen/margin_16"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
